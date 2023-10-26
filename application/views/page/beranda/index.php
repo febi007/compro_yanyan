@@ -88,7 +88,7 @@ if(count($read_data) > 1){
     <div class="container">
         <div class="block-title mb-0">
             <div class="block-title text-center">
-                <h2 class="inner-banner__title">Jurusan<br>
+                <h2 class="inner-banner__title">Kegiatan<br>
                 </h2>
             </div>
             <div class="course-category-one__carousel owl-carousel owl-theme">
@@ -156,24 +156,10 @@ if(count($read_data) > 1){
 </section><!-- /.blog-one blog-page -->
 
 
-<section class="brand-two sr-btm"">
-<div class="container">
-    <div class="block-title">
-        <h2 class="block-title__title" style="text-align:center">Our company & partners</h2><!-- /.block-title__title -->
-    </div><!-- /.block-title -->
-    <div class="brand-one__carousel owl-carousel owl-theme">
-        <?php $read_data = $this->M_crud->read_data("tbl_gallery","*","type='9'");foreach($read_data as $row):?>
-            <div class="item">
-                <img src="<?=$row['image']?>" alt="" style="height: 70px!important;">
-            </div><!-- /.item -->
-        <?php endforeach; ?>
-    </div><!-- /.brand-one__carousel owl-carousel owl-theme -->
-</div><!-- /.container -->
-</section>
 
 
 <!-- MAPS -->
-<section class="inner-banner sr-btm"">
+<section class="inner-banner sr-btm">
 <div class="container">
     <h2 class="inner-banner__title text">Kontak</h2><!-- /.inner-banner__title -->
 </div><!-- /.container -->

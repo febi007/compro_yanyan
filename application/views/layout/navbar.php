@@ -57,6 +57,14 @@
                             <li class="visible-xs"><a href="<?=base_url().'download';?>"><?=$this->session->nama?> ( <?=$this->session->nis?> )</a></li>
                         <?php } ?>
                         <li><a href="<?=base_url();?>">Beranda</a></li>
+                        <li>
+                            <a href="#">Kegiatan</a>
+                            <ul class="sub-menu">
+                                <?php foreach ($jurusan as $j) { ?>
+                                    <li><a href="<?=base_url("keahlian?type=".$j['slug'])?>"><?=$j['title']?></a></li>
+                                <?php }?>
+                            </ul>
+                        </li>
 
                         <li>
                             <a href="#">Berita</a>
@@ -66,8 +74,9 @@
                                 <?php }?>
                             </ul>
                         </li>
+                     
 
-                        <li>
+                        <!-- <li>
                             <a href="#">Selayang Pandang</a>
                             <ul class="sub-menu">
                                 <?php $controller='selayang_pandang'; ?>
@@ -77,8 +86,8 @@
                                 <li><a href="<?=base_url().$controller.'?type=landasan_hukum';?>">Landaasan Hukum</a></li>
                                 <li><a href="<?=base_url().$controller.'?type=fasilitas';?>">Fasilitas</a></li>
                             </ul>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a href="#">Manajemen</a>
                             <ul class="sub-menu">
                                 <?php $controller='manajemen'; ?>
@@ -88,17 +97,17 @@
                                 <li><a href="<?=base_url().$controller.'?type=dewan_komite';?>">Dewan Komite</a></li>
                                 <li><a href="<?=base_url().$controller.'?type=kajur_kaprog';?>">Kajur & Kaprog</a></li>
                             </ul>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a href="#">Struktur Organisasi</a>
                             <ul class="sub-menu">
                                 <?php $controller='struktur'; ?>
                                 <li><a href="<?=base_url().$controller.'?type=bagan';?>">Bagan Struktur</a></li>
                                 <li><a href="<?=base_url().$controller.'?type=divisi';?>">Divisi</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="#">Kegiatan</a>
+                            <a href="#">Galeri</a>
                             <ul class="sub-menu">
                                 <?php $controller='kegiatan'; ?>
                                 <li><a href="<?=base_url().$controller.'?type=osis';?>">OSIS</a></li>
@@ -117,14 +126,7 @@
                                 <li><a href="<?=base_url().$controller.'?type=lowongan_kerja';?>">Lowongan Kerja</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#">Paket Keahlian</a>
-                            <ul class="sub-menu">
-                                <?php foreach ($jurusan as $j) { ?>
-                                    <li><a href="<?=base_url("keahlian?type=".$j['slug'])?>"><?=$j['title']?></a></li>
-                                <?php }?>
-                            </ul>
-                        </li>
+                        
                         <?php if($this->session->isLogin == true) {?>
                             <li><a href="<?=base_url().'download';?>">Download</a></li>
                         <?php } ?>
