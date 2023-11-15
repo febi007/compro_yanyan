@@ -75,13 +75,13 @@ $query_builder = TRUE;
 
 $currentDomain = $_SERVER['SERVER_NAME'];
 $hostname="localhost";
-$username="root";
-$password="";
+$username="admin";
+$password="Netin1234a!";
 $database="db_yanyansopiyan";
 if($currentDomain!='localhost'){
     $hostname="localhost";
-    $username="root";
-    $password="";
+    $username="admin";
+    $password="Netin1234a!";
     $database="db_yanyansopiyan";
 }
 

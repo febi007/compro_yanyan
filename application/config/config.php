@@ -25,10 +25,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['url'] = ((isset($_SERVER['HTTP']) && $_SERVER['HTTPS'] == "on") ? "https" : "http").'://'.$_SERVER['HTTP_HOST'].'/';
 $currentDomain = $_SERVER['SERVER_NAME'];
-$config['site'] = 'compro_yanyan';
+$config['site'] = '/';
 $config['perpus']  = $config['url'].'netindo/smk/smk14-perpus/auth/auth_siswa';
 if($currentDomain!='localhost'){
-    $config['site'] = '/compro_yanyan';
+    $config['site'] = '/';
     $config['perpus'] = 'https://perpus.smkn14bdg.sch.id/auth/auth_siswa';
 }
 $config['base_url'] = $config['url'].$config['site'];
