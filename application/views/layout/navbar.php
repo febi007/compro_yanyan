@@ -141,7 +141,7 @@
 
                 </div>
 
-                <!-- /.container -->
+                /.container
         </nav>
         <div class="site-header__decor">
             <div class="site-header__decor-row">

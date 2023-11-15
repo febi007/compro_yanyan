@@ -46,27 +46,25 @@
 						<li
 						<?=$this->session->id_level!=1&&$this->session->id_level!=7?'style="display:none"':''?>
 						><a class="waves-effect <?=$this->uri->segment('2')=='berita'?'active':''?>" href="<?=urls('berita')?>"><span>Berita</span></a></li>
-						<li
+						<!-- <li
 						<?=$this->session->id_level!=1&&$this->session->id_level!=7?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='lowongan'?'active':''?>" href="<?=urls('lowongan')?>"><span>Lowongan</span></a></li>
-						<li
+						><a class="waves-effect <?=$this->uri->segment('2')=='lowongan'?'active':''?>" href="<?=urls('lowongan')?>"><span>Lowongan</span></a></li> -->
+						<!-- <li
 						<?=$this->session->id_level!=1&&$this->session->id_level!=7?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='partnership'?'active':''?>" href="<?=urls('partnership')?>"><span>Partnership</span></a></li>
-						<li 
+						><a class="waves-effect <?=$this->uri->segment('2')=='partnership'?'active':''?>" href="<?=urls('partnership')?>"><span>Partnership</span></a></li> -->
+						<!-- <li 
 						<?=$this->session->id_level!=1&&$this->session->id_level!=2&&$this->session->id_level!=5?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='informasi'?'active':''?>" href="<?=urls('informasi')?>"><span>Informasi</span></a></li>
+						><a class="waves-effect <?=$this->uri->segment('2')=='informasi'?'active':''?>" href="<?=urls('informasi')?>"><span>Informasi</span></a></li> -->
 						<li
 							<?=$this->session->id_level!=1&&$this->session->id_level!=5?'style="display:none"':''?>
 						><a class="waves-effect <?=$this->uri->segment('2')=='gallery'?'active':''?>" href="<?=urls('gallery')?>"><span>Gallery</span></a></li>
 						<li
 						<?=$this->session->id_level!=1&&$this->session->id_level!=2?'style="display:none"':''?>
 						><a class="waves-effect <?=$this->uri->segment('2')=='slider'?'active':''?>" href="<?=urls('slider')?>"><span>Slider</span></a></li>
+					
 						<li
 						<?=$this->session->id_level!=1&&$this->session->id_level!=2?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='fasilitas'?'active':''?>" href="<?=urls('fasilitas')?>"><span>Fasilitas</span></a></li>
-						<li
-						<?=$this->session->id_level!=1&&$this->session->id_level!=2?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='sarana_prasarana'?'active':''?>" href="<?=urls('sarana_prasarana')?>"><span>Sarana dan Prasarana</span></a></li>
+						><a class="waves-effect <?=$this->uri->segment('2')=='sarana_prasarana'?'active':''?>" href="<?=urls('sarana_prasarana')?>"><span>Informasi</span></a></li>
 					</ul>
                 </li>
 				<li
@@ -81,21 +79,21 @@
 				>
 					<a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-file-o"></i><span>Master Data</span><span class="menu-arrow fa fa-angle-down"></span></a>
 					<ul class="sub-menu js__content">
-						<li 
+						<!-- <li 
 						<?=$this->session->id_level!=1&&$this->session->id_level!=3?'style="display:none"':''?>
 						><a class="waves-effect <?=$this->uri->segment('2')=='manajemen'?'active':''?>" href="<?=urls('manajemen')?>"><span>Manajemen</span></a></li>
 						<li
 						<?=$this->session->id_level!=1&&$this->session->id_level!=4?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='guru'?'active':''?>" href="<?=urls('guru')?>"><span>Guru</span></a></li>
+						><a class="waves-effect <?=$this->uri->segment('2')=='guru'?'active':''?>" href="<?=urls('guru')?>"><span>Guru</span></a></li> -->
 						<li 
 						<?=$this->session->id_level!=1&&$this->session->id_level!=3?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='jurusan'?'active':''?>" href="<?=urls('jurusan')?>"><span>Jurusan</span></a></li>
-						<li
-						<?=$this->session->id_level!=1&&$this->session->id_level!=4?'style="display:none"':''?>
+						><a class="waves-effect <?=$this->uri->segment('2')=='jurusan'?'active':''?>" href="<?=urls('jurusan')?>"><span>Kegiatan</span></a></li>
+						<!-- <li -->
+						<!-- <?=$this->session->id_level!=1&&$this->session->id_level!=4?'style="display:none"':''?>
 						><a class="waves-effect <?=$this->uri->segment('2')=='kelas'?'active':''?>" href="<?=urls('kelas')?>"><span>Kelas</span></a></li>
 						<li
 						<?=$this->session->id_level!=1&&$this->session->id_level!=4?'style="display:none"':''?>
-						><a class="waves-effect <?=$this->uri->segment('2')=='siswa'?'active':''?>" href="<?=urls('siswa')?>"><span>Siswa</span></a></li>
+						><a class="waves-effect <?=$this->uri->segment('2')=='siswa'?'active':''?>" href="<?=urls('siswa')?>"><span>Siswa</span></a></li> -->
 					</ul>
                 </li>
 				<li 
