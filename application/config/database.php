@@ -75,8 +75,8 @@ $query_builder = TRUE;
 
 $currentDomain = $_SERVER['SERVER_NAME'];
 $hostname="localhost";
-$username="admin";
-$password="Netin1234a!";
+$username="root";
+$password="";
 $database="db_yanyansopiyan";
 if($currentDomain!='localhost'){
     $hostname="localhost";

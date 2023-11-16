@@ -28,8 +28,8 @@ if(count($read_data) > 0){
                     <div class="banner-one__bubble-3"></div>
                     <div class="row no-gutters">
                         <div class="col-xl-12">
-                            <h3 style="font-size:60px;" class="banner-one__title banner-one__light-color">'.$value["title"].' </h3>
-                            <p style="font-size:20px;" class="banner-one__light-color">'.$value["deskripsi"].' </p>
+                            <h3 style="font-size:60px;" class="banner-one__title banner-one__light-color tulisan1">'.$value["title"].' </h3>
+                            <p class="banner-one__light-color tulisan4" >'.$value["deskripsi"].' </p>
                         </div>
                     </div>
                 </div>
@@ -61,17 +61,20 @@ if(count($read_data) > 1){
             <div class="col-lg-6">
                 <div class="about-two__content">
                     <div class="block-title text-left">
-                        <h2 class="block-title__title">KEPALA SEKOLAH<br><?=$config['site_title']?></h2>
+                        <h2 class="block-title__title tulisan1">CALEG DPRD KOTA BANDUNG DAPIL 3 PARTAI PAN<br>
+                        <!-- <?=$config['site_title']?> -->
+                    </h2>
                     </div>
-                    <p class="about-two__text"style="text-align:justify">
-                        Nama : <?=$manajemen['nama']?><br>
-                        NIP : <?=$manajemen['nip']?><br>
+                    <h2 class="tulisan2"><?=$manajemen['nama']?></h2>
+                    <p class="about-two__text tulisan3"style="text-align:justify">
+                        
+                        <!-- NIP : <?=$manajemen['nip']?><br> -->
                         <?=$manajemen['deskripsi']?>
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-xl-end justify-content-sm-center">
-                <div class="about-two__image">
+            <div class="col-lg-6 d-flex justify-content-xl-end justify-content-sm-center gambar1">
+                <div class="about-two__image gambar1">
                     <span class="about-two__image-dots"></span>
                     <img src="<?=$manajemen['image']?>" alt="" style="width: 400px">
                 </div>
@@ -83,7 +86,7 @@ if(count($read_data) > 1){
 <!-- End Kepala Sekolah -->
 
 <!-- Jurusan -->
-<?php $img = base_url().'assets/img/jurusan.jpg';?>
+<!-- <?php $img = base_url().'assets/img/jurusan.jpg';?>
 <section class="course-one__top-title home-one sr-btm">
     <div class="container">
         <div class="block-title mb-0">
@@ -109,26 +112,14 @@ if(count($read_data) > 1){
         </div>
     </div>
     <div class="course-one__top-title__curve"></div>
-</section>
+</section> -->
 
 <!-- End Jurusan -->
-
-
-<!-- Berita -->
-<section class="blog-one blog-page sr-btm">
-    <div class="container">
-        <h2 class="inner-banner__title" style="text-align:center;color:#011928;padding:30px">Berita Terbaru</h2>
-        <div class="row" id="result_berita">
-
-        </div>
-</section>
-
-
 
 <section class="blog-two  sr-btm">
     <div class="container">
         <div class="block-title text-center">
-            <h2 class="block-title__title">Galeri</h2>
+            <h2 class="block-title__title tulisan1">Galeri</h2>
         </div>
         <div class="blog-two__carousel owl-carousel owl-theme">
             <?php if($gallery != null){ foreach($gallery as $row):?>
@@ -154,6 +145,19 @@ if(count($read_data) > 1){
         </div><!-- /.blog-two__carousel owl-carousel owl-theme -->
     </div><!-- /.container -->
 </section><!-- /.blog-one blog-page -->
+
+<!-- Berita -->
+<section class="blog-one blog-page sr-btm">
+    <div class="container">
+        <h2 class="block-title__title tulisan1" style="text-align:center;color:#011928;padding:30px">Berita Terbaru</h2>
+        <div class="row" id="result_berita">
+
+        </div>
+</section>
+
+
+
+
 
 
 

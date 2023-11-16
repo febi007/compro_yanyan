@@ -1,6 +1,8 @@
 /*
 * expandable menu started
 */
+
+
 @media (max-width: 1280px) {
   .header__search-form {
     display: none;

@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['url'] = ((isset($_SERVER['HTTP']) && $_SERVER['HTTPS'] == "on") ? "https" : "http").'://'.$_SERVER['HTTP_HOST'].'/';
 $currentDomain = $_SERVER['SERVER_NAME'];
-$config['site'] = '/';
+$config['site'] = '/compro_yanyan';
 $config['perpus']  = $config['url'].'netindo/smk/smk14-perpus/auth/auth_siswa';
 if($currentDomain!='localhost'){
     $config['site'] = '/';

@@ -52,6 +52,31 @@
 
     }
 
+    @media screen and (min-device-width: 360px) and (max-device-width: 768px) { 
+        .tulisan1{
+            font-size:30px ;
+            text-align:center;
+        }
+        .tulisan2{
+            text-align:left;
+            font-size:20px ;
+
+        }
+        .tulisan4{
+            text-align:center;
+            font-size:15px;
+            }
+        .tulisan3{
+            text-align:justify;
+            font-size:18px ;
+        }
+
+        .about-two__image-dots{
+            display:none;            
+        }
+
+    }
+
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
 
@@ -64,8 +89,16 @@
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
+        .tulisan4{
+            text-align:left;
+            font-size:20px;
+            }
 
     }
+    .text{
+        color:white;
+    }
+ 
     .first-loader {
         position: fixed;
         top: 0;
